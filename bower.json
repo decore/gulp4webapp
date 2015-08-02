@@ -1,0 +1,20 @@
+{
+  "name": "Gulp 4 based webapp",
+  "version": "0.1.0",
+  "description": "Starter kit for Web App with Gulp 4",
+  "authors": [
+    "Bogdan Plieshka"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/godban/gulp4webapp",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "normalize.css": "~3.0.3",
+    "lodash": "~3.10.0"
+  }
+}
