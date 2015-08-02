@@ -4,8 +4,7 @@ var gulp        = require('gulp'),
     wiredep     = require('wiredep').stream,
     browserSync = require('browser-sync'),
     config      = require('./gulp.config.js')(),
-    $           = require('gulp-load-plugins')({lazy: true}),
-    port        = process.env.PORT || config.defaultPort;
+    $           = require('gulp-load-plugins')({lazy: true});
 
 gulp.task('lint', function () {
     log('Analyzing JS code with JSHint & JSCS');
@@ -201,14 +200,13 @@ function changeEvent(event) {
 }
 
 function serve (mode) {
-
     var baseDir = [];
 
     if (args.nosync || browserSync.active) {
         return;
     }
 
-    log('Starting browser sync on port ' + port);
+    log('Starting browser sync on port ' + config.port);
 
     if (mode === 'prod') {
         baseDir = [config.prod];
