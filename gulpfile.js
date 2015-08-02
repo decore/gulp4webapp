@@ -7,9 +7,6 @@ var gulp        = require('gulp'),
     $           = require('gulp-load-plugins')({lazy: true}),
     port        = process.env.PORT || config.defaultPort;
 
-// gulp.task('help', $.taskListing);
-// gulp.task('default', function(){});
-
 gulp.task('lint', function () {
     log('Analyzing JS code with JSHint & JSCS');
     return gulp
@@ -178,6 +175,8 @@ gulp.task('build', gulp.series(
         log('Building application...');
     }
 ));
+
+gulp.task('default', gulp.series('serve'));
 
 function log(msg) {
     if (typeof(msg) === 'object') {

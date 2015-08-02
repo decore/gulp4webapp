@@ -13,8 +13,5 @@
     "bower_components"
   ],
   "devDependencies": {},
-  "dependencies": {
-    "normalize.css": "~3.0.3",
-    "lodash": "~3.10.0"
-  }
+  "dependencies": {}
 }
