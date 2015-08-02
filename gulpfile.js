@@ -203,8 +203,7 @@ function changeEvent(event) {
 
 function serve (mode) {
 
-    var baseDir = [],
-        watchDir = ;
+    var baseDir = [];
 
     if (args.nosync || browserSync.active) {
         return;

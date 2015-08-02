@@ -62,3 +62,7 @@ journal
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Project
+.tmp
+prod
