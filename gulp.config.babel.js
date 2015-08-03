@@ -1,5 +1,6 @@
-module.exports = function() {
-    var root = './',
+module.exports = () => {
+    const
+        root = './',
         src = root + 'src/',
         temp = root + '.tmp/',
         config = {
@@ -30,6 +31,5 @@ module.exports = function() {
             reloadDelay: 0,
             port: 9000
         };
-
     return config;
 };
