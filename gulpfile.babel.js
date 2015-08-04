@@ -94,7 +94,7 @@ gulp.task('wiredep', () => {
 });
 
 gulp.task('inject', gulp.series(
-    gulp.parallel('wiredep', 'styles'),
+    gulp.parallel('styles', 'wiredep'),
     () => {
         log('Injecting css & js into html');
         return gulp
